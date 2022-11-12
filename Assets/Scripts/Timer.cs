@@ -22,7 +22,8 @@ public class Timer : MonoBehaviour
             countDownStartValue--;
             Invoke("CountDownTimer",1.0f);
         }else{
-            timerUI.text="GAMEOVER!";
+            PlayerManager.isGameOver=true;
+            gameObject.SetActive(false);
         }
     }
     // Update is called once per frame
