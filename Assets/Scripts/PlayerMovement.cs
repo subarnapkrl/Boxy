@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     float _inputHorizontal;
     float _inputVertical;
 
+    [SerializeField] private AudioSource moveSoundEffect;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,9 +28,11 @@ public class PlayerMovement : MonoBehaviour
 
         if(_inputHorizontal!=0)
         {
+            moveSoundEffect.Play();
             _rb.AddForce(new Vector2(_inputHorizontal*_speed,0f));
         }
         if(_inputVertical!=0){
+            moveSoundEffect.Play();
             _rb.AddForce(new Vector2(0f,_inputVertical*_speed));
         }
     }

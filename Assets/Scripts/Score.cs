@@ -10,6 +10,8 @@ public class Score : MonoBehaviour
 
     private int scoreNum;
 
+    [SerializeField] private AudioSource collectSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,16 +21,19 @@ public class Score : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.tag=="Coin")
         {
+            
             scoreNum++;
+            collectSound.Play();
             Destroy(other.gameObject);
             scoreText.text="COINS: "+ scoreNum;
+            
         }
         
     }
      private void Update() {
         if(scoreNum==5)
         {
-            Invoke("CompleteLevel",2f);
+            Invoke("CompleteLevel",1.2f);
             
         }   
     }
