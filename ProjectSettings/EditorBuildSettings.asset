@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pace02.unity
     guid: cd8aafb2b5a104a49b3ecdde7c649fb2
+  - enabled: 1
+    path: Assets/Scenes/Credit.unity
+    guid: b962d1a73a6c5fc4b8c12ba6494a3868
   m_configObjects: {}
