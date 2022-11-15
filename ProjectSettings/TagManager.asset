@@ -8,6 +8,7 @@ TagManager:
   - Coin
   - Enemy
   - Turn
+  - Turne
   layers:
   - Default
   - TransparentFX
