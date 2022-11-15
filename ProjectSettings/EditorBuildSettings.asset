@@ -13,7 +13,10 @@ EditorBuildSettings:
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Pace02.unity
-    guid: cd8aafb2b5a104a49b3ecdde7c649fb2
+    guid: 2d6034a9499485f4b9f139d89db5c51e
+  - enabled: 1
+    path: Assets/Scenes/Pace03.unity
+    guid: 59ea8f6aacb2dbd43901229b44d3015d
   - enabled: 1
     path: Assets/Scenes/Credit.unity
     guid: b962d1a73a6c5fc4b8c12ba6494a3868
