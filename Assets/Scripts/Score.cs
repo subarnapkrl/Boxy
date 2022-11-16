@@ -33,7 +33,7 @@ public class Score : MonoBehaviour
      private void Update() {
         if(scoreNum==5)
         {
-            Invoke("CompleteLevel",1.2f);
+            Invoke("CompleteLevel",0.8f);
             
         }   
     }

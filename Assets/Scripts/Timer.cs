@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    int countDownStartValue=10;
+    int countDownStartValue=15;
     [SerializeField] Text timerUI;
     // Start is called before the first frame update
     void Start()
@@ -26,9 +26,5 @@ public class Timer : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
